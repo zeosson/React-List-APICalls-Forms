@@ -10,10 +10,10 @@ state = {term: ''};
 
   // Use this to prevent the form from submiting
   // This is to advoid using the bind way for functions 
-  onFormSubmit = (event) => {
+  onFormSubmit = event => {
       event.preventDefault();
 
-      this.props.OnSubmit(this.state.term)
+      this.props.onSubmit(this.state.term)
   }
 
 
